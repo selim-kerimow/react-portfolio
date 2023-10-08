@@ -1,0 +1,45 @@
+.navbar {
+    position: relative;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #21325e;
+}
+
+.navbar--initials {
+    color: goldenrod;
+    margin: 0 40px;
+    font-size: 1.7rem;
+}
+
+.navbar--links {
+    margin: 20px;
+}
+
+.navbar--links a {
+    color: white;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.navbar--hamburger {
+    display: none;
+}
+
+
+@media screen and (max-width: 530px) {
+    .navbar--initials {
+        margin: 0 20px;
+    }
+    .navbar--links {
+        display: none;
+    }
+
+    .navbar--hamburger {
+        display: flex;
+        margin: 20px;
+    }
+}
