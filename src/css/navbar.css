@@ -1,5 +1,5 @@
 .navbar {
-    position: relative;
+    position: sticky;
     height: 65px;
     width: 100%;
     display: flex;
@@ -34,8 +34,26 @@
     .navbar--initials {
         margin: 0 20px;
     }
+
     .navbar--links {
         display: none;
+    }
+    
+    .navbar--links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #21325e;
+        width: 100%;
+        position: absolute;
+        top: 64px;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 20px;
+    }
+
+    .navbar--links.active a {
+        margin: 15px 0;
     }
 
     .navbar--hamburger {

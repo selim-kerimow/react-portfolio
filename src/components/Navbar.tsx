@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
                 }
             </div>
 
-            <ul className="navbar--links">
+            <ul className={`navbar--links ${toggle ? 'active' : ''}`}>
 
                 <Link to='/' style={{color: location.pathname == '/' ? 'goldenrod' : ''}}>
                     Home
