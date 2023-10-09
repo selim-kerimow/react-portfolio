@@ -1,5 +1,5 @@
 .navbar {
-    position: sticky;
+    position: fixed;
     height: 65px;
     width: 100%;
     display: flex;

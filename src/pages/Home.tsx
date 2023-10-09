@@ -28,7 +28,31 @@ const Home: React.FC = () => {
                 </div>
             </div>
 
-
+            <div className="skills">
+                <h1 className="skills--title">Skills</h1>
+                <div className="skills-basic">
+                    <h2>Basic</h2>
+                    <p>HTML, CSS, TypeScrypt, JavaScript, Github</p>
+                </div>
+                <div className="skills--react">
+                    <h2>React</h2>
+                    <ul>
+                        <li><strong>Fetch:</strong>  RTK Query, react-query</li>
+                        <li><strong>State management:</strong> Redux Toolkit, Mobx, Context</li>
+                        <li><strong>CSS Libraries:</strong>  Material UI, tailwindcss, React-Bootstrap</li>
+                        <li><strong>Testing:</strong> React Testing Library</li>
+                        <li><strong>Others:</strong> React Hook Form, Axios, js-cookie, </li>
+                    </ul>
+                </div>
+                <div className="skills--languages">
+                    <h2>Languages</h2>
+                    <div className="languages--inner">
+                        <p>Russian: Native</p>
+                        <p>English: Advanced</p>
+                        <p>Turkmen: Native</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     )
