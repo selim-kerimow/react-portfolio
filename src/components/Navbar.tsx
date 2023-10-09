@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 // css
@@ -15,6 +15,11 @@ const Navbar: React.FC = () => {
 
     // states
     const [toggle, setToggle] = useState(false)
+
+    // This hook will close the navbar of small screens after clicking on path
+    useEffect(() => {
+        setToggle(false)
+    }, [location])
 
     // functions
     const toggleHandler = () => {
