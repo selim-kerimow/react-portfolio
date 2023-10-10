@@ -1,0 +1,45 @@
+.email {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email--form {
+    display: flex;
+    width: 90%;
+    max-width: 400px;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.email--send {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0;
+    font-size: 1rem;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+}
+
+.email--title {
+    width: 90%;
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width:280px) {
+    .email {
+        height: 110vh;
+    }
+    .email--title {
+        margin-top: 80px;
+        font-size: 1.5rem;
+    }    
+}
