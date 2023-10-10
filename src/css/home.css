@@ -37,25 +37,26 @@
 /* skills section */
 .skills {
     width: 100%;
-    height: calc(100vh - 65px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: #21325e;
+    margin: 35px 0;
 }
 .skills--title {
     margin: 0;
     padding: 30px 0;
     font-size: 4rem;
-    
 }
 
 .skills-basic {
- text-align: center;
+    text-align: center;
 }
 .skills-basic h2 {
     font-size: 2.5rem;
-    margin: 25px 0 10px 0;
+    margin-top: 15px;
 }
 .skills-basic p {
     font-size: 1.4rem;
@@ -68,10 +69,15 @@
 }
 .skills--react h2 {
     font-size: 2.5rem;
-    margin: 25px 0 10px 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.skills--react ul {
+    padding-left: 15px;
 }
 .skills--react li {
     font-size: 1.4rem;
+    margin: 15px;
 }
 
 .skills--languages {
@@ -81,7 +87,7 @@
 }
 .skills--languages h2 {
     font-size: 2.5rem;
-    margin: 25px 0 10px 0;
+    margin: 10px 0;
 }
 .languages--inner {
     display: flex;
@@ -92,7 +98,7 @@
 
 
 /* responsive design */
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 540px) {
     .about--title {
         font-size: 3rem;
     }
@@ -101,9 +107,49 @@
         min-width: 0;
         font-size: 1.4rem;
     }
+
+    .skills {
+        height: 90vh;
+    }
+    .skills--title {
+        font-size: 3rem;
+    }
+    .skills-basic h2 {
+        font-size: 2.2rem;
+    }
+    .skills-basic p {
+        font-size: 1.2rem;
+    }
+
+    .skills--react ul {
+        margin: 0;
+    }
+    .skills--react h2 {
+        font-size: 2.2rem;
+    }
+    .skills--react li {
+        font-size: 1.2rem;
+    }
+
+
+    .skills--languages h2 {
+        font-size: 2.2rem;
+    }
+    .languages--inner {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .languages--inner p {
+        margin: 0;
+        font-size: 1.2rem;
+    }
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 415px) {
+    .skills {
+        height: 90vh;
+    }
     .about--title {
         font-size: 2.5rem;
     }
@@ -111,5 +157,37 @@
         width: 90%;
         min-width: 0;
         font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .skills {
+        height: 108vh;
+    }
+    .skills--title {
+        font-size: 2.5rem;
+    }
+    .skills-basic h2 {
+        font-size: 1.8rem;
+    }
+    .skills-basic p {
+        font-size: 1rem;
+    }
+
+    .skills--react ul {
+        margin: 0;
+    }
+    .skills--react h2 {
+        font-size: 1.8rem;
+    }
+    .skills--react li {
+        font-size: 1rem;
+    }
+
+    .skills--languages h2 {
+        font-size: 1.8rem;
+    }
+    .languages--inner p {
+        font-size: 1rem;
     }
 }

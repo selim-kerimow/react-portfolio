@@ -39,7 +39,7 @@ const Home: React.FC = () => {
                     <ul>
                         <li><strong>Fetch:</strong>  RTK Query, react-query</li>
                         <li><strong>State management:</strong> Redux Toolkit, Mobx, Context</li>
-                        <li><strong>CSS Libraries:</strong>  Material UI, tailwindcss, React-Bootstrap</li>
+                        <li><strong>CSS Libraries:</strong> Ant Design, Material UI, tailwindcss, React-Bootstrap</li>
                         <li><strong>Testing:</strong> React Testing Library</li>
                         <li><strong>Others:</strong> React Hook Form, Axios, js-cookie, </li>
                     </ul>
