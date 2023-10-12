@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     gap: 7px;
+    margin: 10px 0;
     color: goldenrod;
     text-decoration: none;
 }

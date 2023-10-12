@@ -1,0 +1,28 @@
+.projects {
+    width: 70%;
+    height: 100vh;
+    margin: 0 auto;
+    /* padding-top: 80px; */
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1535px) {
+    .projects {
+        width: 90%;
+        /* height: auto;
+        padding-top: 80px; */
+    }
+}
+
+@media screen and (max-width: 1195px) {
+    .projects {
+        width: 90%;
+        height: auto;
+        padding-top: 80px;
+    }
+}
