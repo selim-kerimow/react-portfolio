@@ -11,7 +11,7 @@ const ProjectCard: React.FC = () => {
 
 
     return (
-        <Card sx={{maxWidth: 345}} elevation={4}>
+        <Card sx={{maxWidth: 335}} elevation={4}>
             <CardMedia
                 sx={{ height: 300, width: '100%'}}
                 image={githubSearch}
@@ -25,11 +25,11 @@ const ProjectCard: React.FC = () => {
                     React project connected to opened github API. You can easily find your repositories in in this project
                 </Typography>
             </CardContent>
-            <CardActions>
+            <CardActions sx={{ gap: '8px'}}>
                 <Button size="small" sx={{position: 'inherit'}} href="https://selim-kerimow.github.io/react-modern-stack/" target="_blank">
                         Live Demo
                 </Button>
-                <Button size="small" sx={{position: 'inherit'}}>
+                <Button size="small" sx={{position: 'inherit'}} href="https://github.com/selim-kerimow/github-search" target="_blank">
                     Repository
                 </Button>
             </CardActions>
