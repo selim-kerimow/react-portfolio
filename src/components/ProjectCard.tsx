@@ -4,9 +4,6 @@ import { IProject } from "../projects";
 // Material UI 
 import { Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material'
 
-import githubSearch from '../assets/github-search.png'
-
-
 interface ProjectCardProps {
     project: IProject
 }
@@ -27,7 +24,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <Typography gutterBottom variant="h6" component="div">
                     { project.title }
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" style={{height: 50}}>
                     { project.description }
                 </Typography>
             </CardContent>

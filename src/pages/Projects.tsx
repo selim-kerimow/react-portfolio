@@ -12,10 +12,16 @@ const Projects: React.FC = () => {
 
     return (
         <div className="projects">
-            { projects?.map(project => (
-                <ProjectCard project={project}/>  
-            ))}
-            
+
+            <div className="projects-header">
+                <h1>My Personal Projects</h1>
+            </div>
+
+            <div className="projects-card">
+                { projects?.map(project => (
+                    <ProjectCard project={project}/>  
+                ))}
+            </div>
         </div>
     )
 }
