@@ -1,4 +1,5 @@
 import React from "react";
+import {TableContainer, Table, TableBody, TableRow, TableCell, Paper } from '@mui/material'
 
 // css 
 import '../css/home.css'
@@ -10,7 +11,20 @@ import { BsGithub } from 'react-icons/bs'
 
 const Home: React.FC = () => {
 
-
+    function createData(
+        category: string,
+        description: string,
+      ) {
+        return {category, description };
+      }
+      
+      const rows = [
+        createData('Fetch', 'RTK Query, React Query, Axios'),
+        createData('State Management', 'Redux Toolkit, Mobx, Context'),
+        createData('CSS Frameworks', 'Ant Design, Material UI, tailwindcss, React-Bootstrap'),
+        createData('Testing', 'React Testing Library'),
+        createData('Others', 'React Hook Form, react-scroll, former-motion, js-cookie,'),
+      ];
 
     return (
         <div className="home">
@@ -37,11 +51,23 @@ const Home: React.FC = () => {
                 <div className="skills--react">
                     <h2>React</h2>
                     <ul>
-                        <li><strong>Fetch:</strong>  RTK Query, react-query</li>
-                        <li><strong>State management:</strong> Redux Toolkit, Mobx, Context</li>
-                        <li><strong>CSS Libraries:</strong> Ant Design, Material UI, tailwindcss, React-Bootstrap</li>
-                        <li><strong>Testing:</strong> React Testing Library</li>
-                        <li><strong>Others:</strong> React Hook Form, Axios, js-cookie, </li>
+                        <TableContainer component={Paper} elevation={0}>
+                        <Table sx={{ width: '90%', maxWidth: 600,}} aria-label="simple table">
+                            <TableBody >
+                            {rows.map((row) => (
+                                <TableRow
+                                    key={row.category}
+                                    sx={{ '&:last-child td, &:last-child th': { border: 0 }}}
+                                    >
+                                    <TableCell component="th" scope="row" sx={{fontSize: {md: '1.2rem', xs: '1rem'}, color: '#21325e'}}>
+                                        <strong>{row.category}</strong>
+                                    </TableCell>
+                                    <TableCell align="left" sx={{fontSize: {xs: '0.9rem', md: '1rem'}, color: '#21325e'}}>{row.description}</TableCell>
+                                </TableRow>
+                            ))}
+                            </TableBody>
+                        </Table>
+                        </TableContainer>
                     </ul>
                 </div>
                 <div className="skills--languages">
