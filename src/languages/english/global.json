@@ -14,5 +14,12 @@
         "project2": "React project connected to open github API (using RTK Query). You can easily find your repositories in in this website.",
         "project3": "Simple Fitness Club project, using React, Typescript and CSS.",
         "caution": " Antd 5.0 requires new versions of your browser!"
+    },
+    "email": {
+        "title": "You can send me an email directly from this website",
+        "from": "From",
+        "to": "to",
+        "subject": "Subject",
+        "compose": "Compose Email"
     }
 }

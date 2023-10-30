@@ -8,15 +8,16 @@ import { TextField } from "@mui/material";
 
 // react-icons
 import { GrSend } from 'react-icons/gr'
+import { useTranslation } from "react-i18next";
 
 
 const SendEmail: React.FC = () => {
 
-
+    const [t] = useTranslation("global")
 
     return (
         <div className="email">
-            <h1 className="email--title">You can send me an email directly from this website</h1>
+            <h1 className="email--title">{t('email.title')}</h1>
 
             <form className="email--form">
 
