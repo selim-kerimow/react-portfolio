@@ -8,6 +8,16 @@
     background-color: #21325e;
 }
 
+.navbar--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.languages--button {
+    background-color: transparent;
+    color: white;
+}
+
 .navbar--initials {
     color: goldenrod;
     margin: 0 40px;
@@ -16,6 +26,7 @@
 
 .navbar--links {
     margin: 20px;
+    padding: 0;
 }
 
 .navbar--links a {
@@ -30,7 +41,7 @@
 }
 
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 660px) {
     .navbar--initials {
         margin: 0 20px;
     }
@@ -46,6 +57,7 @@
         background-color: #21325e;
         width: 100%;
         position: absolute;
+        left: 0;
         top: 64px;
         margin: 0;
         padding: 0;
