@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         <div className="footer">
             <p> <PiPhone size={23} /> +99362208957</p>
             <p> <MdAlternateEmail size={23} /> selimkerimovdv@gmail.com </p>
-            <a href="https://github.com/selim-kerimow" target="_blank"> <AiFillGithub size={23} color='goldenrod'/> https://github.com/selim-kerimow</a>
+            <p><a href="https://github.com/selim-kerimow" target="_blank"> <AiFillGithub size={23} color='goldenrod'/> https://github.com/selim-kerimow</a></p>
             <p> Asghabat 2023</p>
         </div>
     )
