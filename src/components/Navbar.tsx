@@ -16,30 +16,14 @@ import { MdOutlineClose } from 'react-icons/md'
 // assets 
 import rus from '../assets/rus.png'
 import eng from '../assets/eng.png'
+import { useTranslation } from "react-i18next";
 
-
-const items: MenuProps['items'] = [
-    {
-      label: 'English',
-      key: '1',
-      icon: <img src={eng} />,
-    },
-    {
-      label: 'Russian',
-      key: '2',
-      icon: <img src={rus} />,
-    }
-  ];
-
-  const menuProps = {
-    items,
-    // onClick: handleMenuClick,
-  };
 
 
 const Navbar: React.FC = () => {
 
     const location = useLocation()
+    const [_, i18n] = useTranslation()
 
     // states
     const [toggle, setToggle] = useState(false)
@@ -53,6 +37,29 @@ const Navbar: React.FC = () => {
     const toggleHandler = () => {
         setToggle(!toggle)
     }
+    const switchLaguageHandler = (lang: string) => {
+        i18n.changeLanguage(lang)
+    }
+
+    // language menu items
+    const items: MenuProps['items'] = [
+        { label: 'English',
+          key: '1',
+          icon: <img src={eng} />,
+          onClick: () => switchLaguageHandler('eng')
+        },
+        {
+          label: 'Russian',
+          key: '2',
+          icon: <img src={rus} />,
+          onClick: () => switchLaguageHandler('rus')
+        }
+      ];
+    
+      const menuProps = {
+        items,
+        // onClick: switchLaguageHandler,
+      };
 
     return (
         <nav className="navbar">

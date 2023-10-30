@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from 'react-i18next'
 import {TableContainer, Table, TableBody, TableRow, TableCell, Paper } from '@mui/material'
 
 // css 
@@ -10,6 +11,8 @@ import { BsGithub } from 'react-icons/bs'
 
 
 const Home: React.FC = () => {
+
+    const [t] = useTranslation("global")
 
     function createData(
         category: string,
@@ -31,7 +34,7 @@ const Home: React.FC = () => {
 
             <div className="about">
                 <h1 className="about--title">Selim Kerimow</h1>
-                <p className="about--subtitle">A software developer with a passion for learning and creating.</p>
+                <p className="about--subtitle">{t("home.description")}</p>
                 <div className="about--icons">
                     <a href="/email">
                         <MdEmail size={45} color='white' />
