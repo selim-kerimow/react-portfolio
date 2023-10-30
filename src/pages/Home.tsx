@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from 'react-i18next'
-import {TableContainer, Table, TableBody, TableRow, TableCell, Paper } from '@mui/material'
+import { TableContainer, Table, TableBody, TableRow, TableCell, Paper } from '@mui/material'
 
 // css 
 import '../css/home.css'
@@ -46,9 +46,9 @@ const Home: React.FC = () => {
             </div>
 
             <div className="skills">
-                <h1 className="skills--title">Skills</h1>
+                <h1 className="skills--title">{t('home.skills')}</h1>
                 <div className="skills-basic">
-                    <h2>Basic</h2>
+                    <h2>{t('home.basic')}</h2>
                     <p>HTML, CSS, TypeScrypt, JavaScript, Github</p>
                 </div>
                 <div className="skills--react">
@@ -74,11 +74,11 @@ const Home: React.FC = () => {
                     </ul>
                 </div>
                 <div className="skills--languages">
-                    <h2>Languages</h2>
+                    <h2>{t('home.languages')}</h2>
                     <div className="languages--inner">
-                        <p>Russian: Native</p>
-                        <p>English: Advanced</p>
-                        <p>Turkmen: Native</p>
+                        <p>{t('home.lang1')}</p>
+                        <p>{t('home.lang2')}</p>
+                        <p>{t('home.lang3')}</p>
                     </div>
                 </div>
             </div>

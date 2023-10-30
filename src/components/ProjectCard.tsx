@@ -1,5 +1,5 @@
 import React from "react";
-import { IProject } from "../projects";
+import { IProject } from "../pages/Projects";
 
 // Material UI 
 import { Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material'
@@ -10,8 +10,6 @@ interface ProjectCardProps {
 
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-
-
 
     return (
         <Card sx={{maxWidth: 335, width: 335, height: 520}} elevation={4}>
@@ -24,7 +22,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <Typography gutterBottom variant="h6" component="div">
                     { project.title }
                 </Typography>
-                <Typography variant="body2" color="text.secondary" style={{height: 50}}>
+                <Typography variant="body2" color="text.secondary" style={{height: 60}}>
                     { project.description }
                 </Typography>
             </CardContent>

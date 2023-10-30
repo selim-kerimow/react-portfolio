@@ -1,6 +1,17 @@
 {
     "home": {
         "description": "Frontend React developer with a passion for learning and creating.",
-        "skills": "Skills"
+        "skills": "Skills",
+        "basic": "Базовые",
+        "languages": "Languages",
+        "lang1": "Russian: Native",
+        "lang2": "English: Advanced",
+        "lang3": "Turkmen: Native"
+    },
+    "projects": {
+        "title": "My Personal Projects",
+        "project1": "Demo bookstore website using the world's second most popular React UI library - Ant Design.",
+        "project2": "React project connected to open github API (using RTK Query). You can easily find your repositories in in this website.",
+        "project3": "Simple Fitness Club project, using React, Typescript and CSS."
     }
 }
