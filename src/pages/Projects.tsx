@@ -16,7 +16,8 @@ export interface IProject {
     description: string,
     check_url: string,
     repo_url: string,
-    image: string
+    image: string,
+    caution?: string
 }
 
 
@@ -31,7 +32,8 @@ const Projects: React.FC = () => {
             description: t('projects.project1'), 
             check_url: 'https://selim-kerimow.github.io/react-antd/',
             repo_url: 'https://github.com/selim-kerimow/react-antd',
-            image: GNBookstore
+            image: GNBookstore,
+            caution: t("projects.caution")
         },
         {
             id: 2, 
@@ -39,7 +41,7 @@ const Projects: React.FC = () => {
             description: t('projects.project2'), 
             check_url: 'https://selim-kerimow.github.io/github-search',
             repo_url: 'https://github.com/selim-kerimow/github-search',
-            image: githubSearch
+            image: githubSearch,
         },
         {
             id: 3, 

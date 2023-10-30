@@ -23,6 +23,10 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+.card-caution {
+    color: red;
+    margin: 0;
+}
 
 @media screen and (max-width: 1535px) {
     .projects-card {

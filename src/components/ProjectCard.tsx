@@ -22,8 +22,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 <Typography gutterBottom variant="h6" component="div">
                     { project.title }
                 </Typography>
-                <Typography variant="body2" color="text.secondary" style={{height: 60}}>
-                    { project.description }
+                <Typography variant="body2" color="text.secondary" style={{height: '70px'}}>
+                    { project.description } <span className="card-caution">{project.caution}</span>
                 </Typography>
             </CardContent>
             <CardActions sx={{ gap: '8px'}}>
