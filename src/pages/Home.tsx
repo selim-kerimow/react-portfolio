@@ -1,13 +1,16 @@
 import React from "react";
 import { useTranslation } from 'react-i18next'
 import { TableContainer, Table, TableBody, TableRow, TableCell, Paper } from '@mui/material'
+import { CopyToClipboard } from 'react-copy-to-clipboard'
+import { message } from "antd";
 
 // css 
 import '../css/home.css'
 
 // react-icons
 import { MdEmail } from 'react-icons/md'
-import { BsGithub } from 'react-icons/bs'
+import { BsGithub} from 'react-icons/bs'
+import { AiTwotonePhone } from 'react-icons/ai'
 
 
 const Home: React.FC = () => {
@@ -26,8 +29,12 @@ const Home: React.FC = () => {
         createData('State Management', 'Redux Toolkit, Mobx, Context'),
         createData('CSS Frameworks', 'Ant Design, Material UI, tailwindcss, React-Bootstrap'),
         createData('Testing', 'React Testing Library'),
-        createData('Others', 'React Hook Form, react-scroll, former-motion, js-cookie,'),
+        createData('Others', 'react-scroll, i18next, emailjs, former-motion, js-cookie, react-hook-form ...'),
       ];
+
+    const copyText = (value: string) => {
+        message.success(value)
+    }
 
     return (
         <div className="home">
@@ -36,11 +43,14 @@ const Home: React.FC = () => {
                 <h1 className="about--title">Selim Kerimow</h1>
                 <p className="about--subtitle">{t("home.description")}</p>
                 <div className="about--icons">
-                    <a href="/email">
-                        <MdEmail size={45} color='white' />
-                    </a>
+                    <CopyToClipboard text={'+99362208957'} onCopy={() => copyText('+99362208957 phone number copied!')}>
+                        <AiTwotonePhone color='white' size={38}/>
+                    </CopyToClipboard>
+                    <CopyToClipboard text={'selimkerimovdv@gmail.com'} onCopy={() => copyText('selimkerimovdv@gmail.com email copied!')}>
+                        <MdEmail color='white' size={40}/>
+                    </CopyToClipboard>
                     <a href="https://github.com/selim-kerimow" target="_blank">
-                        <BsGithub size={40} color='white'/>
+                        <BsGithub size={35} color='white'/>
                     </a>
                 </div>
             </div>

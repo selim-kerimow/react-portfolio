@@ -38,7 +38,12 @@ const SendEmail = () => {
             <h1 className="email--title">{t('email.title')}</h1>
 
             <form className="email--form" ref={form} onSubmit={sendEmail}>
-
+                <TextField
+                    id="outlined-required"
+                    disabled
+                    fullWidth={true}
+                    value={'selimkerimovdv@gmail.com'}
+                />
                 <TextField
                     type='text'
                     name="user_name"

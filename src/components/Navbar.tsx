@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
           onClick: () => switchLaguageHandler('eng')
         },
         {
-          label: 'Russian',
+          label: 'Русский',
           key: '2',
           icon: <img src={rus} />,
           onClick: () => switchLaguageHandler('rus')

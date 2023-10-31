@@ -8,7 +8,7 @@
     "home": {
         "description": "Frontend React developer with a passion for learning and creating.",
         "skills": "Skills",
-        "basic": "Базовые",
+        "basic": "Basic",
         "languages": "Languages",
         "lang1": "Russian: Native",
         "lang2": "English: Advanced",
@@ -24,10 +24,11 @@
         "repo": "REPOSITORY"
     },
     "email": {
-        "title": "You can send me an email directly from this website",
+        "title": "Send me an email directly from this website (Requires VPN!)",
         "name": "Name",
         "email": "Email",
         "subject": "Subject",
-        "compose": "Compose Email"
+        "compose": "Compose Email",
+        "to": "To"
     }
 }
