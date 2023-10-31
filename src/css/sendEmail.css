@@ -26,6 +26,7 @@
     background-color: goldenrod;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .email--title {

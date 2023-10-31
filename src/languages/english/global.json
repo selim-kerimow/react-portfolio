@@ -19,8 +19,8 @@
     },
     "email": {
         "title": "You can send me an email directly from this website",
-        "from": "From",
-        "to": "to",
+        "name": "Name",
+        "email": "Email",
         "subject": "Subject",
         "compose": "Compose Email"
     }
