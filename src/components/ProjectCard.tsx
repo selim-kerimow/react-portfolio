@@ -1,5 +1,6 @@
 import React from "react";
 import { IProject } from "../pages/Projects";
+import { useTranslation } from "react-i18next";
 
 // Material UI 
 import { Card, CardMedia, CardContent, Typography, CardActions, Button } from '@mui/material'
@@ -10,6 +11,8 @@ interface ProjectCardProps {
 
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
+
+    const [t] = useTranslation('global')
 
     return (
         <Card sx={{maxWidth: 335, width: 335, height: 520}} elevation={4}>
@@ -28,10 +31,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </CardContent>
             <CardActions sx={{ gap: '8px'}}>
                 <Button size="small" sx={{position: 'inherit'}} href={project.check_url} target="_blank">
-                        Check Out
+                    { t('projects.check')}
                 </Button>
                 <Button size="small" sx={{position: 'inherit'}} href={project.repo_url} target="_blank">
-                    Repository
+                { t('projects.repo')}
                 </Button>
             </CardActions>
       </Card>
