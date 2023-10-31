@@ -2,4 +2,4 @@
 
 ## Hope you like it!
 
-### link
+### link: homepage”: https://selim-kerimow.github.io/react-portfolio/

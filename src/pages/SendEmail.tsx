@@ -16,9 +16,9 @@ import { useTranslation } from "react-i18next";
 const SendEmail = () => {
 
     const [t] = useTranslation("global")
-    const form = useRef()
+    const form = useRef<any>()
 
-    const sendEmail = (e) => {
+    const sendEmail = (e: React.ChangeEvent<HTMLFormElement>) => {
         e.preventDefault()
         emailjs.sendForm('service_2bu6mok', 'template_mgstshe', form.current, 'iehaW4mfPHICH6fLT')
         .then(
