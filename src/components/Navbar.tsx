@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 // Ant Design
 import { Dropdown, Button, Space, } from 'antd'
@@ -16,14 +17,13 @@ import { MdOutlineClose } from 'react-icons/md'
 // assets 
 import rus from '../assets/rus.png'
 import eng from '../assets/eng.png'
-import { useTranslation } from "react-i18next";
 
 
 
 const Navbar: React.FC = () => {
 
     const location = useLocation()
-    const [_, i18n] = useTranslation()
+    const [t, i18n] = useTranslation("global")
 
     // states
     const [toggle, setToggle] = useState(false)
@@ -57,8 +57,7 @@ const Navbar: React.FC = () => {
       ];
     
       const menuProps = {
-        items,
-        // onClick: switchLaguageHandler,
+        items
       };
 
     return (
@@ -71,7 +70,7 @@ const Navbar: React.FC = () => {
                 <Dropdown className="languages--button" menu={menuProps}>
                     <Button>
                         <Space>
-                            Languages
+                        { t('navbar.languages') }
                         <DownOutlined />
                         </Space>
                     </Button>
@@ -87,13 +86,13 @@ const Navbar: React.FC = () => {
                 <ul className={`navbar--links ${toggle ? 'active' : ''}`}>
 
                     <Link to='/' style={{color: location.pathname == '/' ? 'goldenrod' : ''}}>
-                        Home
+                        { t('navbar.home') }
                     </Link>
                     <Link to='/projects' style={{color: location.pathname == '/projects' ? 'goldenrod' : ''}}>
-                        Projects
+                    { t('navbar.projects') }
                     </Link>
                     <Link to='/email' style={{color: location.pathname == '/email' ? 'goldenrod' : ''}}>
-                        Send Email
+                    { t('navbar.sendEmail') }
                     </Link>
 
                 </ul>

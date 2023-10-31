@@ -1,4 +1,10 @@
 {
+    "navbar": {
+        "home": "Главная",
+        "projects": "Проекты",
+        "sendEmail": "Отправить Email",
+        "languages": "Языки"
+    },
     "home": {
         "description": "Frontend React разработчик со страстью к обучению и творчеству.",
         "skills": "Навыки",

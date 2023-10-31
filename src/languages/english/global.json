@@ -1,4 +1,10 @@
 {
+    "navbar": {
+        "home": "Home",
+        "projects": "Projects",
+        "sendEmail": "Send Email",
+        "languages": "Languages"
+    },
     "home": {
         "description": "Frontend React developer with a passion for learning and creating.",
         "skills": "Skills",
