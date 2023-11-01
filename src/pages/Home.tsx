@@ -64,7 +64,7 @@ const Home: React.FC = () => {
                 <h1 className="skills--title" id="skills">{t('home.skills')}</h1>
                 <div className="skills-basic">
                     <h2>{t('home.basic')}</h2>
-                    <p>HTML, CSS, TypeScrypt, JavaScript, Github</p>
+                    <p>HTML, CSS, TypeScript, JavaScript, Github</p>
                 </div>
                 <div className="skills--react">
                     <h2>React</h2>
