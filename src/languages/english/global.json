@@ -29,7 +29,9 @@
         "email": "Email",
         "subject": "Subject",
         "compose": "Compose Email",
-        "to": "To"
+        "to": "To",
+        "success-message": "Message successfully sent!",
+        "error-message": "Error! Maybe you don't have a VPN?"
     },
     "copy": {
         "phone": "+99362208957 phone number copied!",

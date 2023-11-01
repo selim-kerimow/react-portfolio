@@ -25,10 +25,10 @@ const SendEmail = () => {
             (result) => {
                 console.log(result.text)
                 e.target.reset()
-                message.success('Message sent!')
+                message.success(t('email.success-message'))
             }, (error) => {
                 console.log(error.text)
-                message.error("Something went wrong! Do you have VPN?")
+                message.error(t('email.error-message'))
             }
         )
     }
