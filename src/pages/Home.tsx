@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { TableContainer, Table, TableBody, TableRow, TableCell, Paper } from '@mui/material'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { message } from "antd";
+import { Link } from 'react-scroll'
 
 // css 
 import '../css/home.css'
@@ -11,6 +12,7 @@ import '../css/home.css'
 import { MdEmail } from 'react-icons/md'
 import { BsGithub} from 'react-icons/bs'
 import { AiTwotonePhone } from 'react-icons/ai'
+import { BiSolidDownArrowCircle } from 'react-icons/bi'
 
 
 const Home: React.FC = () => {
@@ -40,23 +42,26 @@ const Home: React.FC = () => {
         <div className="home">
 
             <div className="about">
-                <h1 className="about--title">Selim Kerimow</h1>
+                <h1 className="about--title">Selim Kerimov</h1>
                 <p className="about--subtitle">{t("home.description")}</p>
                 <div className="about--icons">
-                    <CopyToClipboard text={'+99362208957'} onCopy={() => copyText('+99362208957 phone number copied!')}>
+                    <CopyToClipboard text={'+99362208957'} onCopy={() => copyText(t('copy.phone'))}>
                         <AiTwotonePhone color='white' size={38}/>
                     </CopyToClipboard>
-                    <CopyToClipboard text={'selimkerimovdv@gmail.com'} onCopy={() => copyText('selimkerimovdv@gmail.com email copied!')}>
+                    <CopyToClipboard text={'selimkerimovdv@gmail.com'} onCopy={() => copyText(t('copy.email'))}>
                         <MdEmail color='white' size={40}/>
                     </CopyToClipboard>
                     <a href="https://github.com/selim-kerimow" target="_blank">
                         <BsGithub size={35} color='white'/>
                     </a>
                 </div>
+                <div className="arrow-abs">
+                    <Link to='skills' smooth={true}><BiSolidDownArrowCircle size={45} color='goldenrod'/></Link>
+                </div>
             </div>
 
             <div className="skills">
-                <h1 className="skills--title">{t('home.skills')}</h1>
+                <h1 className="skills--title" id="skills">{t('home.skills')}</h1>
                 <div className="skills-basic">
                     <h2>{t('home.basic')}</h2>
                     <p>HTML, CSS, TypeScrypt, JavaScript, Github</p>

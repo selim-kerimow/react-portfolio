@@ -30,5 +30,9 @@
         "subject": "Subject",
         "compose": "Compose Email",
         "to": "To"
+    },
+    "copy": {
+        "phone": "+99362208957 phone number copied!",
+        "email": "selimkerimovdv@gmail.com email copied!"
     }
 }
