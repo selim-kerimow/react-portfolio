@@ -39,13 +39,14 @@ const SendEmail = () => {
 
             <form className="email--form" ref={form} onSubmit={sendEmail}>
                 <TextField
+                    label={t('email.to')}
                     id="outlined-required"
                     disabled
                     fullWidth={true}
                     value={'selimkerimovdv@gmail.com'}
                 />
                 <TextField
-                    type='text'
+                    type="text"
                     name="user_name"
                     required
                     id="outlined-required"
@@ -53,7 +54,7 @@ const SendEmail = () => {
                     fullWidth={true}
                 />
                 <TextField
-                    type='text'
+                    type='email'
                     name="user_email"
                     id="outlined-required"
                     label={t('email.email')}
