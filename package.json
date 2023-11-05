@@ -17,6 +17,7 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.12",
+    "@tanstack/react-query": "^5.7.0",
     "antd": "^5.10.2",
     "gh-pages": "^6.0.0",
     "i18next": "^23.6.0",

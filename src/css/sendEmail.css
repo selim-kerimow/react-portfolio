@@ -20,13 +20,18 @@
 .email--send {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 40px;
     gap: 8px;
-    padding: 10px 0;
     font-size: 1rem;
     background-color: goldenrod;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.email--send p {
+    margin: 0;
 }
 
 .email--title {

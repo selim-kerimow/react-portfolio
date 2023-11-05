@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from '@emailjs/browser'
 
 // css
@@ -6,7 +6,8 @@ import '../css/sendEmail.css'
 
 // Material UI && Ant Design
 import { TextField } from "@mui/material";
-import { message } from 'antd';
+import { message, Spin } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
 
 // react-icons
 import { GrSend } from 'react-icons/gr'
@@ -17,17 +18,21 @@ const SendEmail = () => {
 
     const [t] = useTranslation("global")
     const form = useRef<any>()
+    const [loading, setLoading] = useState(false)
 
     const sendEmail = (e: React.ChangeEvent<HTMLFormElement>) => {
         e.preventDefault()
+        setLoading(true)
         emailjs.sendForm('service_2bu6mok', 'template_mgstshe', form.current, 'iehaW4mfPHICH6fLT')
         .then(
             (result) => {
                 console.log(result.text)
                 e.target.reset()
+                setLoading(false)
                 message.success(t('email.success-message'))
             }, (error) => {
                 console.log(error.text)
+                setLoading(false)
                 message.error(t('email.error-message'))
             }
         )
@@ -71,7 +76,7 @@ const SendEmail = () => {
                     rows={7}
                 />
                 <button className="email--send" type="submit">
-                    Send <GrSend />
+                    { loading ? <Spin size="small" indicator={<LoadingOutlined style={{ fontSize: 24 }} spin />}/> : <p>Send <GrSend /></p>}
                 </button>
 
             </form>
