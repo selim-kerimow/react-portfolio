@@ -23,6 +23,7 @@
     color: goldenrod;
     margin: 0 40px;
     font-size: 1.7rem;
+    cursor: pointer;
 }
 
 .navbar--links {

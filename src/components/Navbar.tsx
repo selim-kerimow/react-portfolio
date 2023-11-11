@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 // Ant Design
@@ -21,6 +21,8 @@ import eng from '../assets/eng.png'
 
 
 const Navbar: React.FC = () => {
+
+    const navigate =useNavigate()
 
     const location = useLocation()
     const [t, i18n] = useTranslation("global")
@@ -63,7 +65,9 @@ const Navbar: React.FC = () => {
     return (
         <nav className="navbar">
 
-            <h1 className="navbar--initials">SK</h1>
+            <h1 className="navbar--initials" onClick={() => navigate('/')}>
+                SK
+            </h1>
 
             <div className="navbar--wrapper">
 

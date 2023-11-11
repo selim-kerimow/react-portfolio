@@ -46,13 +46,13 @@ const Home: React.FC = () => {
                 <p className="about--subtitle">{t("home.description")}</p>
                 <div className="about--icons">
                     <CopyToClipboard text={'+99362208957'} onCopy={() => copyText(t('copy.phone'))}>
-                        <AiTwotonePhone color='white' size={38}/>
+                        <AiTwotonePhone color='white' size={38} className='icon'/>
                     </CopyToClipboard>
                     <CopyToClipboard text={'selimkerimovdv@gmail.com'} onCopy={() => copyText(t('copy.email'))}>
-                        <MdEmail color='white' size={40}/>
+                        <MdEmail color='white' size={40} className='icon'/>
                     </CopyToClipboard>
                     <a href="https://github.com/selim-kerimow" target="_blank">
-                        <BsGithub size={35} color='white'/>
+                        <BsGithub size={35} color='white' className='icon'/>
                     </a>
                 </div>
                 <div className="arrow-abs">
